@@ -51,16 +51,16 @@ module Prosperent
       end
     end
 
-    def get_products params, options={}
+    def products params, options={}
       response = make_get_request("/search", params.merge(authentication_params))
     end
 
-    def get_brands params, options={}
-      response = make_get_request("/brand", params.merge(authentication_params))
+    def brands params, options={}
+      response = make_get_request("/brand", params)
     end
 
-    def get_celebrities params, options={}
-      response = make_get_request("/celebrity", params.merge(authentication_params))
+    def celebrities params, options={}
+      response = make_get_request("/celebrity", params)
     end
 
     private
