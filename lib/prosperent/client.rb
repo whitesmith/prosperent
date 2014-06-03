@@ -1,6 +1,7 @@
 require 'httparty'
 require 'prosperent/configuration'
 require 'prosperent/error'
+require 'prosperent/version'
 
 module Prosperent
   extend Configuration
@@ -25,10 +26,7 @@ module Prosperent
       end
 
       def response_errors?(response)
-        puts response
-        return false
-
-        # response.body =~ /^ERROR: .+/ || !response.response.is_a?(Net::HTTPSuccess)
+        !response["errors"].empty?
       end
 
     end

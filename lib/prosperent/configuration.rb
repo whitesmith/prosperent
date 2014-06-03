@@ -1,3 +1,5 @@
+require 'prosperent/version'
+
 module Prosperent
   module Configuration
     VALID_CONNECTION_KEYS = [:endpoint, :user_agent, :method].freeze
