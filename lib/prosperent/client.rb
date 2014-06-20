@@ -52,7 +52,9 @@ module Prosperent
     end
 
     def products params, options={}
-      response = make_get_request("/search", params.merge(authentication_params))
+      url = build_search_query("/search", options[:zone])
+
+      response = make_get_request(url , params.merge(authentication_params))
     end
 
     def brands params, options={}
@@ -64,6 +66,19 @@ module Prosperent
     end
 
     private
+
+    def build_search_query action, options_zone
+
+      zone = ( options_zone || @merged_options[:zone] ).to_s.downcase
+
+      if ["","uk","ca"].include?(zone)
+        zone = zone.empty? ? "" : "/#{zone}"
+      else
+        zone = ""
+      end
+
+      return action.prepend(zone)
+    end
 
     def make_post_request url, body, headers = {'Content-Type' => 'application/json'}
       self.class.post(url.to_s, :body => body, :headers => headers)

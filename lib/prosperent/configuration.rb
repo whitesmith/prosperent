@@ -2,7 +2,7 @@ require 'prosperent/version'
 
 module Prosperent
   module Configuration
-    VALID_CONNECTION_KEYS = [:endpoint, :user_agent, :method].freeze
+    VALID_CONNECTION_KEYS = [:endpoint, :user_agent, :method, :zone].freeze
     VALID_OPTIONS_KEYS    = [:api_key, :format].freeze
     VALID_CONFIG_KEYS     = VALID_CONNECTION_KEYS + VALID_OPTIONS_KEYS
  
@@ -12,7 +12,9 @@ module Prosperent
  
     DEFAULT_API_KEY      = nil
     DEFAULT_FORMAT       = :json
- 
+
+    DEFAULT_ZONE         = nil
+
     # Build accessor methods for every config options so we can do this, for example:
     #   Prosperent.format = :xml
     attr_accessor *VALID_CONFIG_KEYS
@@ -27,8 +29,9 @@ module Prosperent
       self.method     = DEFAULT_METHOD
       self.user_agent = DEFAULT_USER_AGENT
  
-      self.api_key    = DEFAULT_API_KEY
-      self.format     = DEFAULT_FORMAT
+      self.api_key      = DEFAULT_API_KEY
+      self.format       = DEFAULT_FORMAT
+      self.zone         = DEFAULT_ZONE
     end
 
     def configure
