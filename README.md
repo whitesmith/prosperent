@@ -35,7 +35,7 @@ Credits
 
 ![Whitesmith](http://i.imgur.com/Si2l3kd.png)
 
-RubyCritic is maintained and funded by [Whitesmith][1]. Tweet your questions or suggestions to [@jbarbosa_][2] or [@Whitesmithco][3].
+Prosperent is maintained and funded by [Whitesmith][1]. Tweet your questions or suggestions to [@jbarbosa_][2] or [@Whitesmithco][3].
 
 [1]: http://www.whitesmith.co/
 [2]: https://twitter.com/jbarbosa_
