@@ -1,7 +1,7 @@
-prosperent
+Prosperent
 ==========
 
-A rails wrapper for prosperent API. It's still under development so use it at your own risk.
+A rails wrapper for prosperent API.
 
 Getting Started
 ---------------
@@ -26,7 +26,7 @@ end
 
 Improving Prosperent
 --------------------
-This gem is still under development. It lacks of tests and more calls.
+This gem is still under development. It lacks of tests and more calls, so use it at your own risk.
 Pull requests that add more features or that fix existing issues will be most welcome. This is my first gem, so just commenting on an issue and giving some insight into how something should work will be appreciated. No contribution is too small.
 
 
@@ -35,7 +35,7 @@ Credits
 
 ![Whitesmith](http://i.imgur.com/Si2l3kd.png)
 
-RubyCritic is maintained and funded by [Whitesmith][1]. Tweet your questions or suggestions to [@jpbarbosa][2] or [@Whitesmithco][3].
+RubyCritic is maintained and funded by [Whitesmith][1]. Tweet your questions or suggestions to [@jbarbosa_][2] or [@Whitesmithco][3].
 
 [1]: http://www.whitesmith.co/
 [2]: https://twitter.com/jbarbosa_
